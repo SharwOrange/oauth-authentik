@@ -15,5 +15,5 @@
 AUTHENTIK_BASE_URL=https://authentik.company/
 AUTHENTIK_CLIENT_ID=1
 AUTHENTIK_CLIENT_SECRE=xxxxx
-AUTHENTIK_REDIRECT_URI=https://skin.blessingskin/
+AUTHENTIK_REDIRECT_URI=https://skin.blessingskin/auth/login/authentik/callback
 ```
