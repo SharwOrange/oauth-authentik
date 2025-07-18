@@ -20,7 +20,7 @@ return function (Dispatcher $events, Filter $filter) {
 
     $filter->add('oauth_providers', function (Collection $providers) {
         $providers->put('authentik', [
-            'icon' => 'users',
+            #'icon' => 'users',
             'displayName' => 'Authentik',
         ]);
         return $providers;
