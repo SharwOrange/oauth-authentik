@@ -17,3 +17,17 @@ AUTHENTIK_CLIENT_ID=1
 AUTHENTIK_CLIENT_SECRE=xxxxx
 AUTHENTIK_REDIRECT_URI=https://skin.blessingskin/auth/login/authentik/callback
 ```
+## FAQ 
+
+### 如果我想修改登录页“Authentik”这个字段怎么办
+
+你可以打开[bootstrap.php](bootstrap.php)，修改displayName所对应的值
+```
+    $filter->add('oauth_providers', function (Collection $providers) {
+        $providers->put('authentik', [
+            'icon' => 'users',
+            'displayName' => 'Authentik',
+        ]);
+        return $providers;
+    });
+```
