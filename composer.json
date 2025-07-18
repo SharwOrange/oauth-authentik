@@ -1,0 +1,6 @@
+{
+    "require": {
+        "socialiteproviders/authentik": "^5.2",
+        "illuminate/support": "~8"
+    }
+}
